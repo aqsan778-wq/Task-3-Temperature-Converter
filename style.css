@@ -1,0 +1,422 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    background: #f4f1ec;
+
+    color: #222222;
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.page {
+    min-height: 100vh;
+
+    padding: 50px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.converter-card {
+    width: 100%;
+
+    max-width: 650px;
+
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+/* Temperature Icon */
+
+.temperature-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #c17b3f;
+
+    color: white;
+
+    font-size: 38px;
+
+    font-weight: bold;
+}
+
+
+.small-title {
+    color: #c17b3f;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+
+.header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+}
+
+
+.subtitle {
+    max-width: 480px;
+
+    margin: auto;
+
+    color: #777777;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.converter-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.form-group label {
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #333333;
+}
+
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid #d8d3cd;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #222222;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #c17b3f;
+
+    box-shadow: 0 0 0 3px rgba(193, 123, 63, 0.10);
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+#convertBtn {
+    width: 100%;
+
+    padding: 16px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #222222;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#convertBtn:hover {
+    background: #c17b3f;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.error-message {
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    background: #fff0f0;
+
+    border: 1px solid #f0b5b5;
+
+    color: #c0392b;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   RESULTS
+========================================= */
+
+.results {
+    margin-top: 35px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #e8e4df;
+}
+
+
+.results h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+
+.result-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+
+.result-box {
+    padding: 20px 12px;
+
+    text-align: center;
+
+    background: #f7f4f0;
+
+    border-radius: 10px;
+
+    border: 1px solid #e7e1da;
+}
+
+
+.result-label {
+    display: block;
+
+    color: #777777;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+
+.result-box strong {
+    display: block;
+
+    color: #c17b3f;
+
+    font-size: 19px;
+}
+
+
+/* =========================================
+   FORMULAS
+========================================= */
+
+.info {
+    margin-top: 30px;
+
+    padding: 22px;
+
+    border-radius: 10px;
+
+    background: #f7f4f0;
+}
+
+
+.info h3 {
+    font-size: 16px;
+
+    margin-bottom: 10px;
+}
+
+
+.info p {
+    color: #666666;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    margin-top: 25px;
+
+    color: #777777;
+
+    font-size: 13px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 600px) {
+
+    .page {
+        padding: 30px 15px;
+    }
+
+    .converter-card {
+        padding: 30px 22px;
+    }
+
+    .header h1 {
+        font-size: 34px;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .converter-card {
+        padding: 25px 18px;
+    }
+
+    .header h1 {
+        font-size: 29px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .temperature-icon {
+        width: 55px;
+        height: 55px;
+
+        font-size: 32px;
+    }
+}
